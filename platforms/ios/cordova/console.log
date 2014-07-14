@@ -1,0 +1,76 @@
+2014-07-14 13:13:57.461 dwxContacts[1444:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-14 13:13:57.574 dwxContacts[1444:70b] Unlimited access to network resources
+2014-07-14 13:13:57.803 dwxContacts[1444:70b] CDVPlugin class IonicKeyboard (pluginName: keyboard) does not exist.
+2014-07-14 13:13:57.804 dwxContacts[1444:70b] [CDVTimer][keyboard] 0.491977ms
+2014-07-14 13:13:57.804 dwxContacts[1444:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-14 13:13:57.805 dwxContacts[1444:70b] [CDVTimer][statusbar] 0.337005ms
+2014-07-14 13:13:57.805 dwxContacts[1444:70b] [CDVTimer][TotalPluginStartup] 1.577020ms
+2014-07-14 13:13:57.974 dwxContacts[1444:70b] Resetting plugins due to page load.
+2014-07-14 13:13:58.166 dwxContacts[1444:70b] Finished load of: file:///Users/am/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B66CC7BF-6CAC-4A3A-A3D5-C1E25DF407ED/dwxContacts.app/www/index.html#/app/contacts
+2014-07-14 13:13:58.336 dwxContacts[1444:70b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-07-14 13:13:58.336 dwxContacts[1444:70b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-07-14 13:13:58.337 dwxContacts[1444:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "Device582144990",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-07-14 14:30:02.765 dwxContacts[2526:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-14 14:30:02.772 dwxContacts[2526:70b] Unlimited access to network resources
+2014-07-14 14:30:02.786 dwxContacts[2526:70b] CDVPlugin class IonicKeyboard (pluginName: keyboard) does not exist.
+2014-07-14 14:30:02.786 dwxContacts[2526:70b] [CDVTimer][keyboard] 0.425994ms
+2014-07-14 14:30:02.786 dwxContacts[2526:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-14 14:30:02.787 dwxContacts[2526:70b] [CDVTimer][statusbar] 0.366986ms
+2014-07-14 14:30:02.787 dwxContacts[2526:70b] [CDVTimer][TotalPluginStartup] 1.525998ms
+2014-07-14 14:30:02.873 dwxContacts[2526:70b] Resetting plugins due to page load.
+2014-07-14 14:30:03.002 dwxContacts[2526:70b] Finished load of: file:///Users/am/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B66CC7BF-6CAC-4A3A-A3D5-C1E25DF407ED/dwxContacts.app/www/index.html#/app/contacts
+2014-07-14 14:30:03.011 dwxContacts[2526:70b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-07-14 14:30:03.011 dwxContacts[2526:70b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-07-14 14:30:03.011 dwxContacts[2526:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "Device992297636",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-07-14 14:38:21.259 dwxContacts[3084:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-14 14:38:21.268 dwxContacts[3084:70b] Unlimited access to network resources
+2014-07-14 14:38:21.286 dwxContacts[3084:70b] CDVPlugin class IonicKeyboard (pluginName: keyboard) does not exist.
+2014-07-14 14:38:21.287 dwxContacts[3084:70b] [CDVTimer][keyboard] 0.420988ms
+2014-07-14 14:38:21.287 dwxContacts[3084:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-14 14:38:21.287 dwxContacts[3084:70b] [CDVTimer][statusbar] 0.317037ms
+2014-07-14 14:38:21.288 dwxContacts[3084:70b] [CDVTimer][TotalPluginStartup] 1.532018ms
+2014-07-14 14:38:21.418 dwxContacts[3084:70b] Resetting plugins due to page load.
+2014-07-14 14:38:21.541 dwxContacts[3084:70b] Finished load of: file:///Users/am/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B66CC7BF-6CAC-4A3A-A3D5-C1E25DF407ED/dwxContacts.app/www/index.html#/app/contacts
+2014-07-14 14:38:21.659 dwxContacts[3084:70b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-07-14 14:38:21.660 dwxContacts[3084:70b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-07-14 14:38:21.660 dwxContacts[3084:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "Device774001860",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-07-14 15:34:56.578 dwxContacts[3608:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-14 15:34:56.588 dwxContacts[3608:70b] Unlimited access to network resources
+2014-07-14 15:34:56.605 dwxContacts[3608:70b] CDVPlugin class IonicKeyboard (pluginName: keyboard) does not exist.
+2014-07-14 15:34:56.606 dwxContacts[3608:70b] [CDVTimer][keyboard] 0.613034ms
+2014-07-14 15:34:56.606 dwxContacts[3608:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-14 15:34:56.607 dwxContacts[3608:70b] [CDVTimer][statusbar] 0.407040ms
+2014-07-14 15:34:56.607 dwxContacts[3608:70b] [CDVTimer][TotalPluginStartup] 1.914978ms
+2014-07-14 15:34:56.696 dwxContacts[3608:70b] Resetting plugins due to page load.
+2014-07-14 15:34:56.828 dwxContacts[3608:70b] Finished load of: file:///Users/am/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B66CC7BF-6CAC-4A3A-A3D5-C1E25DF407ED/dwxContacts.app/www/index.html#/app/contacts
+2014-07-14 15:34:56.994 dwxContacts[3608:70b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-07-14 15:34:56.994 dwxContacts[3608:70b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-07-14 15:34:56.995 dwxContacts[3608:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "Device1563757274",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]

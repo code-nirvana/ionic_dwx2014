@@ -5,8 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('dwxContacts', ['ionic',
                'dwxContacts.modules.contacts',
-               'dwxContacts.modules.data',
-               'ngCordova'])
+               'dwxContacts.modules.data'])
 
     .run(function($ionicPlatform) {
       $ionicPlatform.ready(function() {

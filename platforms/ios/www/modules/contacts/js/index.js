@@ -5,16 +5,7 @@ var SelectionModalState = {
     Applied: 3
 };
 
-var contacts = [];
-
-/*for (var i=0; i<100000; ++i) {
-    contacts.push({
-        id: i,
-        firstName: Faker.Name.firstName(),
-        lastName: Faker.Name.lastName(),
-        phone: Faker.PhoneNumber.phoneNumber()
-    })
-}*/
+var generateLocalDemoDataFirst = false;
 
 angular.module('dwxContacts.modules.contacts', [])
 
@@ -43,13 +34,32 @@ angular.module('dwxContacts.modules.contacts', [])
         ;
     })
 
-    .controller('ContactListController', function($scope, $ionicModal, LocalStorageService, $timeout) {
-        $scope.contacts = [];
+    .controller('ContactListController', function($scope, $ionicModal, LocalStorageService, $timeout, $filter) {
+        var orderBy = $filter('orderBy');
 
         $scope.contacts = [];
 
         $timeout(function () {
-            $scope.contacts = LocalStorageService.getAll('Contacts');
+            if (generateLocalDemoDataFirst) {
+                var contacts = [];
+
+                for (var i=0; i<1000; ++i) {
+                    contacts.push({
+                        id: i,
+                        firstName: Faker.Name.firstName(),
+                        lastName: Faker.Name.lastName(),
+                        phone: Faker.PhoneNumber.phoneNumber(),
+                        email: Faker.Internet.email()
+                    })
+                }
+
+                LocalStorageService.save('Contacts', contacts);
+
+                $scope.contacts = orderBy(LocalStorageService.getAll('Contacts'));
+
+            } else {
+                $scope.contacts = orderBy(LocalStorageService.getAll('Contacts'));
+            }
         });
 
         $ionicModal.fromTemplateUrl('modules/contacts/templates/contactNewEdit.tpl.html', {
@@ -75,6 +85,12 @@ angular.module('dwxContacts.modules.contacts', [])
             $scope.contactNewEditModalData.modalState = SelectionModalState.Opened;
 
             $scope.contactNewEditModal.show();
+        };
+
+        $scope.search = "";
+        $scope.cancelSearch = function () {
+            console.log('cancel search');
+            $scope.search = null;
         };
 
         $scope.$on('modal.hidden', function () {
@@ -107,7 +123,7 @@ angular.module('dwxContacts.modules.contacts', [])
         console.log($scope.contact);
     })
 
-    .controller('ContactNewEditController', function($scope, $cordovaCamera) {
+    .controller('ContactNewEditController', function($scope) {
         $scope.abortContactNewEdit = function() {
             $scope.contactNewEditModalData.modalState = SelectionModalState.Aborted;
 
@@ -118,26 +134,6 @@ angular.module('dwxContacts.modules.contacts', [])
             $scope.contactNewEditModalData.modalState = SelectionModalState.Applied;
 
             $scope.contactNewEditModal.hide();
-        }
-
-        $scope.takePicture = function() {
-            var options = {
-                quality : 75,
-                destinationType : Camera.DestinationType.DATA_URL,
-                sourceType : Camera.PictureSourceType.CAMERA,
-                allowEdit : true,
-                encodingType: Camera.EncodingType.JPEG,
-                targetWidth: 100,
-                targetHeight: 100,
-                popoverOptions: CameraPopoverOptions,
-                saveToPhotoAlbum: false
-            };
-
-            $cordovaCamera.getPicture(options).then(function(imageData) {
-                $scope.contactNewEditModalData.contact.picture = "data:image/jpeg;base64," + imageData
-            }, function(err) {
-                console.log(err);
-            });
         }
     })
 ;
